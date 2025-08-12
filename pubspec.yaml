@@ -1,0 +1,139 @@
+name: snkr_stacks
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- UI & Styling ---
+  badges: ^3.1.2
+  carousel_slider: ^5.0.0
+  cupertino_icons: ^1.0.8
+  flutter_spinkit: ^5.2.1
+  font_awesome_flutter: ^10.8.0
+  google_fonts: ^6.2.1
+  shimmer: ^3.0.0
+  transparent_image: ^2.0.1
+
+  # --- Firebase & Backend Services ---
+  cloud_firestore: ^4.15.7
+  firebase_auth: ^4.17.9
+  firebase_core: ^2.32.0
+  firebase_database: ^10.3.6
+  firebase_storage: ^11.5.6
+
+  # --- Image Handling ---
+  cached_network_image: ^3.4.0
+  # image_cropper: ^5.0.1
+  image_cropper: ^9.1.0
+  image_picker: ^1.1.1
+  crop_your_image: ^0.7.3
+  pinch_zoom: ^2.0.1
+  #  image_cropper_for_web: ^6.0.2
+  #  image_cropper_platform_interface: ^5.0.0
+  photo_view: ^0.15.0
+
+
+  # --- Networking & Connectivity ---
+  connectivity_plus: ^6.1.4
+  url_launcher: ^6.3.1
+  http: ^1.2.0
+
+  # --- State Management & Utilities ---
+  flutter_dotenv: ^5.2.1
+  flutter_multi_formatter: ^2.6.5
+  get: ^4.7.2
+  provider: ^6.1.5
+
+  # --- Payments ---
+  flutter_stripe: ^9.5.0
+
+  # --- Location ---
+  googleapis: ^14.0.0
+
+  # --- Layout Helpers ---
+  flutter_staggered_grid_view: ^0.7.0
+
+  # --- Launch & Icons ---
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.6
+
+  #--- Video ---
+  video_player: ^2.7.0
+  chewie: ^1.7.0
+
+  # --- Webview ---
+  webview_flutter: ^4.13.0
+  webview_flutter_wkwebview: ^3.22.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # --- Linting ---
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/placeholder.png
+    - assets/images/vndy.png
+    - assets/images/holder.png
+    - assets/images/sneakers.jpg
+    - assets/images/ScreenHolder.jpg
+    - assets/.env
+    - assets/images/appleButton.png
+    - assets/images/googleButton.png
+    - assets/images/home-img.png
+    - assets/images/ss_black.png
+    - assets/images/ss_white.png
+
+  fonts:
+    - family: LexendPeta-Regular
+      fonts:
+        - asset: assets/fonts/LexendPeta-Regular.ttf
+
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-Bold.ttf
+
+  #run commands:
+  #1) flutter clean
+  #2) flutter pub get
+  #3) flutter pub run flutter_native_splash:create
+  #or flutter clean && flutter pub get && flutter pub run flutter_native_splash:create
+
+flutter_native_splash:
+  color: "#000000"
+  image: assets/images/ss_white.png
+  android: true
+  ios: true
+  android_12:
+    color: "#000000"
+    image: "assets/images/ss_white.png"
+    icon_background_color: "#000000"
+    image_dark: "assets/images/ss_white.png"
+    color_dark: "#000000"
+    icon_background_color_dark: "#000000"
+
+  info_plist_files:
+    - ios/Runner/Info-Debug.plist
+    - ios/Runner/Info-Release.plist
+
+  #run commands:
+  #1) dart run flutter_launcher_icons -f pubspec.yaml
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/ss_black.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/ss_black.png"

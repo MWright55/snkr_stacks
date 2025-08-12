@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "113140806715",
+    "project_id": "snkrstacks",
+    "storage_bucket": "snkrstacks.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113140806715:android:8e8eb128be92c1f149d81e",
+        "android_client_info": {
+          "package_name": "betatest.snkr_stacks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDssD168kt3IUOaOYwqu6jwT4JAVAMwN8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
